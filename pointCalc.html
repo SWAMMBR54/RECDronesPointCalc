@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eclipse Point Calculator</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="pointCalc.js" defer></script>
+    </head>
+    <body>
+        <article>
+            <h2>Point Calculation</h2>
+            <form>
+                <fieldset id="objectives">
+                    <legend>Objectives</legend>
+                        <div class="inputField">
+                            <label for="takeOff">Takeoff</label>
+                            <input id="takeOff" type="checkbox">
+                        </div>
+                        <div class="inputField">
+                            <label for="underArch">Under Arch</label>
+                            <input id="underArch" type="range" value ="0" step="1" max="2">
+                        </div>
+                        <div class="inputField">
+                            <label for="archLoop">Arch Loop</label>
+                            <input id="archLoop" type="range" value ="0" step="1" max="2">
+                        </div>
+                        <div class="inputField">
+                            <label for="throughKeyhole">Through Keyhole</label>
+                            <input id="throughKeyhole" type="range" value ="0" step="1" max="2">
+                        </div>
+                        <div class="inputField">
+                            <label for="keyholeLoop">Keyhole Loop</label>
+                            <input id="keyholeLoop" type="range" value ="0" step="1" max="2">
+                        </div>
+                        <div class="inputField">
+                            <label for="throughCube">Through Cube</label>
+                            <input id="throughCube" type="range" value ="0" step="1" max="2">
+                        </div>
+                        <div class="inputField">
+                            <label for="landingPad">Landing Pad</label>
+                            <input id="landingPad" type="checkbox">
+                        </div>
+                </fieldset>
+                <fieldset id="bonuses">
+                    <legend>Bonuses</legend>
+                        <div class="inputField">
+                            <label for="bullseyeBonus">Bullseye Bonus</label>
+                            <input id="bullseyeBonus" type="checkbox">
+                        </div>
+                        <div class="inputField">
+                            <label for="bonusUnderArch">Under Arch</label>
+                            <input id="bonusUnderArch" type="number" value="0" min="0">
+                        </div>
+                        <div class="inputField">
+                            <label for="bonusArchLoop">Arch Loop</label>
+                            <input id="bonusArchLoop" type="number" value="0" min="0">
+                        </div>
+                        <div class="inputField">
+                            <label for="bonusThroughKeyhole">Through Keyhole</label>
+                            <input id="bonusThroughKeyhole" type="number" value="0" min="0">
+                        </div>
+                        <div class="inputField">
+                            <label for="bonusKeyholeLoop">Keyhole Loop</label>
+                            <input id="bonusKeyholeLoop" type="number" value="0" min="0">
+                        </div>
+                        <div class="inputField">
+                            <label for="bonusThroughCube">Through Cube</label>
+                            <input id="bonusThroughCube" type="number" value="0" min="0">
+                        </div>
+                </fieldset>
+            </form>
+            <h2>Total Points</h2>
+            <h4 id="totalPoints">0</h4>
+        </article>
+    </body>
+</html>
