@@ -7,20 +7,27 @@ body, article, form, fieldset, input, label {
 
 body {
     font-family: sans-serif;
-}
-
-form {
-    margin: 10px;
+    font-size: 2em;
+    text-align: center;
 }
 
 fieldset {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    display: inline-block;
+    width: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .inputField {
     display: block;
 }
 
 .inputField input[type=number] {
-    width: 30px;
+    width: 50px;
+}
+
+@media (max-width: 500px) {
+    body {
+        font-family: sans-serif;
+        font-size: 50px;
+    }
 }
