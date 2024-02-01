@@ -61,5 +61,8 @@ function calculatePoints() {
     totalBonusPoints = bonusUnderArch + bonusArchLoop + bonusThroughKeyhole + bonusKeyholeLoop + bonusThroughCube;
     totalPoints = totalBasePoints + totalBonusPoints;
 
-    document.getElementById("pointDisplay").innerHTML = totalPoints;
+    (Math.sign(totalPoints) === 1) ? 
+    document.getElementById("pointDisplay").innerHTML = totalPoints : function() {
+        window.alert("Invalid Value");
+    }
 }
