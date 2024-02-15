@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teamwork Point Calculator</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../styles.css">
+        <script src="teampointcalc.js" defer></script>
+    </head>  
+    <body>
+        <div class="container">
+            <nav>
+                <a href="../Autonomous/autopointcalc.html">Autonomous Calculator</a>
+                <a href="../pointcalc.html">Skills Point Calculator</a>
+            </nav>
+            <h2>Teamwork Points Calculation</h2>
+            <form>
+                <fieldset id="teamPoints">
+                    <legend>Teamwork Points</legend>
+                    <div class="inputField">
+                        <label>Cleared Chamber</label>
+                        <input id="chamberCleared" type="range" value="0" max="7" step="1">
+                    </div>
+                    <div class="inputField">
+                        <label>Ball Scored</label>
+                        <input id="ballScored" type="number" value="0" min="0">
+                    </div>
+                    <div class="inputField">
+                        <label>Pillar Ball Removed</label>
+                        <input id="pillarBallRemoved" type="number" value="0" min="0">
+                    </div>
+                    <div class="inputField">
+                        <label>Total Eclipse</label>
+                        <input id="totalEclipse" type="checkbox">
+                    </div>
+                    <div class="inputField">
+                        <label>Partial Eclipse</label>
+                        <input id="partialEclipse" type="checkbox">
+                    </div>
+                    <div class="inputField">
+                        <label>Cube Landing</label>
+                        <input id="cubeLanding" type="checkbox">
+                    </div>
+                    <div class="inputField">
+                        <label>Landing Pad Landing</label>
+                        <input id="landingPadLanding" type="checkbox">
+                    </div>
+                    <div class="inputField">
+                        <label>Bullseye Landing</label>
+                        <input id="bullseyeLanding" type="checkbox">
+                    </div>
+                        <h2 class="totalPoints">Total Teamwork Points</h2>
+                        <h4 class="totalPoints" id="pointDisplay">0</h4>
+                </fieldset>
+            </form>
+        </div>
+    </body>  
+</html>
