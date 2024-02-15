@@ -11,7 +11,7 @@ body {
     text-align: center;
 }
 
-#objectives, #bonuses, #autoPoints {
+#objectives, #bonuses, #autoPoints, #teamPoints {
     display: inline-block;
     width: 600px;
     margin-left: 50px;
