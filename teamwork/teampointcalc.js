@@ -36,7 +36,7 @@ function calculatePoints() {
     partialEclipse *= PARTIAL_ECLIPSE;
     cubeLanding *= CUBE_LANDING;
     landingPadLanding *= LANDING_PAD_LANDING;
-    bullseyeLanding *+ BULLSEYE_LANDING;
+    bullseyeLanding *= BULLSEYE_LANDING;
 
     totalPoints = chamberCleared + ballScored + pillarBallRemoved + totalEclipse + partialEclipse + cubeLanding + landingPadLanding + bullseyeLanding;
 
