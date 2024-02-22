@@ -9,7 +9,7 @@
     <body>
         <div class="container">
             <nav>
-                <a href="../autonomous/autopointcalc.html">Autonomous Calculator</a>
+                <a href="../Autonomous/autopointcalc.html">Autonomous Calculator</a>
                 <a href="../pointcalc.html">Skills Point Calculator</a>
             </nav>
             <h2>Teamwork Points Calculation</h2>
@@ -26,7 +26,7 @@
                     </div>
                     <div class="inputField">
                         <label>Pillar Ball Removed</label>
-                        <input id="pillarBallRemoved" type="number" value="0" min="0">
+                        <input id="pillarBallRemoved" type="range" value="0" min="0" max="4">
                     </div>
                     <div class="inputField">
                         <label>Total Eclipse</label>
@@ -38,20 +38,23 @@
                     </div>
                     <div class="inputField">
                         <label>Cube Landing</label>
-                        <input id="cubeLanding" type="checkbox">
+                        <input id="cubeLanding1" type="checkbox">
+                        <input id="cubeLanding2" type="checkbox">
                     </div>
                     <div class="inputField">
                         <label>Landing Pad Landing</label>
-                        <input id="landingPadLanding" type="checkbox">
+                        <input id="landingPadLanding1" type="checkbox">
+                        <input id="landingPadLanding2" type="checkbox">
                     </div>
                     <div class="inputField">
                         <label>Bullseye Landing</label>
-                        <input id="bullseyeLanding" type="checkbox">
+                        <input id="bullseyeLanding1" type="checkbox">
+                        <input id="bullseyeLanding2" type="checkbox">
                     </div>
+                        <h2 class="totalPoints">Total Teamwork Points</h2>
+                        <h4 class="totalPoints" id="pointDisplay">0</h4>
                 </fieldset>
             </form>
-            <h2 class="totalPoints">Total Teamwork Points</h2>
-            <h4 class="totalPoints" id="pointDisplay">0</h4>
         </div>
     </body>  
 </html>
